@@ -541,7 +541,7 @@ group :development do
 end
 
 # Capfile
-require "capistrano3/sidekiq"
+require "capistrano3/unicorn"
 
 # deploy.rb
 after 'deploy:publishing', 'unicorn:restart'
